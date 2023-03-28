@@ -1,4 +1,4 @@
-## This is the GTS2 Source code repository.
+# GTS2
 
 ### Data 
 
