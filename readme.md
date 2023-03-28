@@ -11,7 +11,7 @@ To reproduce the experiments, please configure an environment:
 
 Then, start training:
 
-- First specify the dataset first: go to `train.py` and change parameter `wiki = TRUE / FALSE` to specify dataset as `wiki / Yago`.
+- First specify the dataset: go to `train.py` and change parameter `wiki = TRUE / FALSE` to specify dataset as `wiki / Yago`.
 - Run `python train.py`
 
  Start Testing:
