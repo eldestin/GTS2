@@ -6,12 +6,12 @@ Two different datasets we used in paper are in data files. Notice that if you wa
 
 ### Layer
 
-All the laye used in GTS2 can be checked in Layer files.
+All the layer used in GTS2 can be checked in Layer files.
 
 ### Train
-
+---
 Used python3 train.py to run the training strategy of GTS2.
-
+---
 ### Requirement
 
 All the experiments are runned in:
