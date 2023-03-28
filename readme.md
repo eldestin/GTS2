@@ -1,22 +1,21 @@
 # GTS2
 
-### Data 
+**ECMLPKDD 2023 submission**: *GTS2: Integrating Graph Temporal-Structural Dependencies and Textual Semantics for Outdated Fact Detection*
 
-Two different datasets we used in paper are in data files. Notice that if you want to change the dataset, please go into train.py and changes **wiki = False**
+## Experiment
 
-### Layer
+To reproduce the experiments, please configure an environment:
 
-All the layer used in GTS2 can be checked in Layer files.
+- Install all the packages using  `pip install -r requirements.txt`
+- You may also download Bert initial weight on [bert-base-uncased · Hugging Face](https://huggingface.co/bert-base-uncased) first.
 
-### Train
+Then, start training:
 
-Used **python3 train.py** to run the training strategy of GTS2.
+- First specify the dataset first: go to `train.py` and change parameter `wiki = TRUE / FALSE` to specify dataset as `wiki / Yago`.
+- Run `python train.py`
 
-### Requirement
+ Start Testing:
 
-All the experiments are runned in:
-
-1. torch V1.12.1+cu116
-2. torch-scatter V2.0.9
-
-with a single 24G 3090 GPU.
+- Test function will be automatically used after training procedure.
+- Go to `train.py` and comment `run_with_amp` function if you only want to test.
+- Then run `python train.py`
