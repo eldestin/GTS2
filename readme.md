@@ -7,7 +7,7 @@
 To reproduce the experiments, please configure an environment:
 
 - Install all the packages using  `pip install -r requirements.txt`
-- You may also download Bert initial weight on [bert-base-uncased · Hugging Face](https://huggingface.co/bert-base-uncased) first.
+- You may also download Bert initial weight on [bert-base-uncased · Hugging Face](https://huggingface.co/bert-base-uncased) in advance.
 
 Then, start training:
 
