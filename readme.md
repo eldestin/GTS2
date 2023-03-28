@@ -14,7 +14,7 @@ Then, start training:
 - First specify the dataset: go to `train.py` and change parameter `wiki = TRUE / FALSE` to specify dataset as `wiki / Yago`.
 - Run `python train.py`
 
- Start Testing:
+Start Testing:
 
 - Test function will be automatically used after training procedure.
 - Go to `train.py` and comment `run_with_amp` function if you only want to test.
