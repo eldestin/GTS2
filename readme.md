@@ -1,6 +1,6 @@
 # GTS2
 
-**ECMLPKDD 2023 submission**: *GTS2: Integrating Graph Temporal-Structural Dependencies and Textual Semantics for Outdated Fact Detection*
+*GTS2: Integrating Graph Temporal-Structural Dependencies and Textual Semantics for Outdated Fact Detection*
 
 ## Experiment
 
