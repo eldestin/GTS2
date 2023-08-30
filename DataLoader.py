@@ -8,7 +8,7 @@ class language_Dataset(torch.utils.data.Dataset):
         df is dataframe given previously
         '''
         self.df = df.reset_index(drop = True)
-        self.tokenizer = BertTokenizerFast.from_pretrained('./bert-base-uncased')
+        self.tokenizer = BertTokenizerFast.from_pretrained('bert-base-uncased')
         self.edge_idx = edge_idx
         self.edge_type = edge_type
     def __len__(self):

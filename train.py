@@ -76,7 +76,7 @@ def test_fun(net, test_set, criterion ,batch_size, divide = True, read = False,p
             f.write("%s"%res_ls)
         with open("test_labels", "w") as f:
             f.write("%s"%labels_all)
-        with open("./5times/F1_MacroF1_summary_compbert_co_attfusion", "a") as f:
+        with open("F1_MacroF1_summary_compbert_co_attfusion", "a") as f:
             f.write("For model "+param_name+" F1 %s"%f1)
             f.write(",Macro F1 %s"%macro_f1)
             f.write(",precision %s"%p)

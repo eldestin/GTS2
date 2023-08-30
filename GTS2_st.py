@@ -111,10 +111,19 @@ class CompGcn_with_temporal_bert(nn.Module):
                 if i == 0:
                     #print("First block:")
                     node_embd, rel_embd = blk(self.node_features, device = device, edge_idx = edge_idx[i], edge_type = edge_type[i])
+                    node_embd, rel_embd = self.dropout_node(node_embd), self.dropout_rel(rel_embd)
+                    Z = self.act_update(self.W_xz(node_embd) + self.W_hz(state))
+                    R = self.act_reset(self.W_xr(node_embd) + self.W_hr(state))
+                    H_candidate = self.act_hidden(self.W_xh(node_embd) + self.W_hh(R * state))
+                    state = Z * state + (1 - Z) * H_candidate
+                    # attention on node
+                    hidden_state_all[:,i,:] = state
                 else:
                     #print(str(i)+"th block:")
                     if self.module == "node":
                         # GRU on node, att on node
+                        # print("State shape would be: ", state.shape)
+                        # print("State is: ", state)
                         node_embd, rel_embd = blk(node_embd = state, rel_embd = rel_embd,device = device, edge_idx = edge_idx[i],
                                                                              edge_type = edge_type[i])
                         node_embd, rel_embd = self.dropout_node(node_embd), self.dropout_rel(rel_embd)
