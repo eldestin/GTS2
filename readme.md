@@ -2,6 +2,11 @@
 
 *GTS2: Integrating Graph Temporal-Structural Dependencies and Textual Semantics for Outdated Fact Detection*
 
+## Architecture
+Our model's architecture is shown as below:
+![image](https://github.com/user-attachments/assets/d6c86ea4-3375-4bad-8944-cad4b552076b)
+
+
 ## Experiment
 
 To reproduce the experiments, please configure an environment:
